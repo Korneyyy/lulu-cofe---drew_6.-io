@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LULU Cold Brew — Премиальный холодный кофе для вашего бизнеса</title>
+    <meta name="description" content="Оптовые поставки премиального холодного кофе LULU Cold Brew. Натуральный состав, без сахара, маржинальность 50%+. Доставка по всей России.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-main">LULU</span>
+                <span class="logo-sub">COLD BREW</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">О продукте</a></li>
+                <li><a href="#about-company">О нас</a></li>
+                <li><a href="#flavors">Вкусы</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <!-- <li><a href="#wholesale">Оптовые поставки</a></li> -->
+                <li><a href="#branding">Брендирование</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <a href="#contacts" class="nav-cta btn btn-orange">Сотрудничество</a>
+            <button class="burger" id="burgerBtn" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#" class="logo">
+                <span class="logo-main">LULU</span>
+                <span class="logo-sub">COLD BREW</span>
+            </a>
+            <button class="close-btn" id="closeBtn" aria-label="Закрыть меню">✕</button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#about">О продукте</a></li>
+            <li><a href="#about-company">О нас</a></li>
+            <!-- <li><a href="#wholesale">Оптовые поставки</a></li> -->
+            <li><a href="#flavors">Вкусы</a></li>
+            <li><a href="#benefits">Преимущества</a></li>
+            <li><a href="#branding">Брендирование</a></li>
+            <li><a href="#geography">География</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <a href="#contacts" class="btn btn-orange mobile-cta">Оставить заявку</a>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Video Background -->
+        <div class="hero-bg-video" aria-hidden="true">
+            <video autoplay muted loop playsinline poster="img/fon.png">
+                <source src="img/fon.mp4" type="video/mp4">
+            </video>
+            <div class="hero-bg-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">B2B — ОПТОВЫЕ ПОСТАВКИ</div>
+                <h1 class="hero-title">
+                    ХОЛОДНЫЙ<br>
+                    КОФЕ<br>
+                    <span class="orange-text">ДЛЯ ВАШЕГО</span><br>
+                    БИЗНЕСА
+                </h1>
+                <p class="hero-desc">
+                    Премиальный готовый Cold Brew без сахара.<br>
+                    Натуральный состав. Маржинальность для партнёров — более 50%. Доставка по всей России.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacts" class="btn btn-orange btn-lg">
+                        Получить прайс
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#contacts" class="btn btn-outline btn-lg">Запросить образцы</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f57c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        <div>
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">партнёров</span>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f57c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <span class="stat-label">Доставка</span>
+                            <span class="stat-sublabel">по всей России</span>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f57c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                        <div>
+                            <span class="stat-label">Маржа</span>
+                            <span class="stat-sublabel">до 50%</span>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <svg class="stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f57c2c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                        <div>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">натуральный состав</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="hero-visual">
+                <div class="hero-product-wrapper">
+                    <div class="hero-product-glow"></div>
+                    <img src="stiker.png" alt="LULU Cold Brew — три банки холодного кофе с брызгами, льдом и кофейными зёрнами" class="hero-product" loading="eager">
+            </div> -->
+        </div>
+        </div>
+
+        <!-- Bottom Features Bar -->
+        <div class="hero-bottom-bar">
+            <div class="bottom-features">
+                <div class="bottom-feature">
+                    <div class="feature-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    </div>
+                    <div>
+                        <strong>Доставка 1–3 дня</strong>
+                        <span>Работаем со всеми регионами России</span>
+                    </div>
+                </div>
+                <div class="bottom-feature">
+                    <div class="feature-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                    </div>
+                    <div>
+                        <strong>Контроль качества</strong>
+                        <span>Собственное производство и строгий контроль</span>
+                    </div>
+                </div>
+                <div class="bottom-feature bottom-feature-rating">
+                    <div class="rating-wrapper">
+                        <div class="rating-stars">★★★★★</div>
+                        <div class="rating-number">4.9/5</div>
+                    </div>
+                    <span>Средняя оценка от наших партнёров</span>
+                </div>
+                <div class="bottom-feature">
+                    <div class="feature-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <div>
+                        <strong>Индивидуальные условия</strong>
+                        <span>Гибкие условия для оптовых партнёров</span>
+                    </div>
+                </div>
+                <div class="bottom-feature">
+                    <div class="feature-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                    </div>
+                    <div>
+                        <strong>Брендирование</strong>
+                        <span>Создадим продукт под вашим брендом</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-label">О продукте</div>
+            <h2 class="section-title">Что такое Cold Brew?</h2>
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <p class="about-text">
+                        Cold Brew — это новый взгляд на кофе. Не просто охлаждённый напиток, а особый способ приготовления, при котором молотый кофе медленно настаивается в холодной воде более 20 часов.
+                    
+                    
+                        Благодаря такому методу раскрывается глубокий и насыщенный вкус без лишней горечи и резкой кислотности. В каждом глотке — натуральная сладость кофейных зёрен, мягкий аромат и освежающая лёгкость.
+                    
+                        Мы не спешим в процессе приготовления, чтобы вы могли насладиться идеально сбалансированным кофе, который бодрит, освежает и дарит удовольствие с первого до последнего глотка. Cold Brew — выбор тех, кто ценит настоящий вкус кофе в его самой мягкой и естественной форме.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">🌱</div>
+                            <div class="about-feature-text">
+                                <h4>100% натуральный состав</h4>
+                                <p>Только кофе и вода — без консервантов, красителей и ароматизаторов</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">🚫</div>
+                            <div class="about-feature-text">
+                                <h4>Без сахара</h4>
+                                <p>Идеально для тех, кто следит за здоровьем и предпочитает натуральный вкус</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">⚡</div>
+                            <div class="about-feature-text">
+                                <h4>Готов к употреблению</h4>
+                                <p>Открыл и наслаждайся — не требует варки, заваривания или дополнительных ингредиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-glow"></div>
+                        <img src="img/baner.jpeg" alt="Процесс приготовления Cold Brew" class="about-image" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section class="section about-company" id="about-company">
+        <div class="container">
+            <div class="section-label">О компании</div>
+            <h2 class="section-title">Сеть T9 начинается с южного Дагестана</h2>
+            <div class="about-company-grid">
+                <div class="about-company-text">
+                    <p>Места, где энергия природы и ритм жизни рождают сильные идеи. Наше первое камерное производство: небольшая команда и стремление создать напитки нового уровня — функциональные и натуральные по составу.</p>
+                    <p>Расширение границ: увеличили мощности, усилили контроль качества и сделали так, чтобы напитки T9 Drinks были доступны и неизменно вкусны в самом сердце страны и с доставкой в регионы.</p>
+                    <p>Но главное мы сохранили: подход, в котором качество стоит выше объёма, а каждая партия — результат внимательной работы и точной технологии.</p>
+                    <p>Сегодня T9 Drinks — это автономная часть сети. Мы начали с cold brew, а сейчас создаём целую линейку напитков без сахара и вредных добавок (SOON).</p>
+                </div>
+                <div class="about-company-features">
+                    <div class="company-feature">
+                        <div class="company-feature-icon">🏭</div>
+                        <div>
+                            <h4>Собственное производство</h4>
+                            <p>Современное оборудование и строгий контроль качества на всех этапах производства</p>
+                        </div>
+                    </div>
+                    <div class="company-feature">
+                        <div class="company-feature-icon"></div>
+                        <div>
+                            <h4>Федеральный охват</h4>
+                            <p>Работаем с партнёрами от Калининграда до Владивостока</p>
+                        </div>
+                    </div>
+                    <div class="company-feature">
+                        <div class="company-feature-icon">🤝</div>
+                        <div>
+                            <h4>Более 300 партнёров</h4>
+                            <p>Нам доверяют кофейни, рестораны, фитнес-клубы и магазины по всей России</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavors Section -->
+    <section class="section flavors" id="flavors">
+        <div class="container">
+            <div class="section-label">Линейка вкусов</div>
+            <h2 class="section-title">5 вкусов на любой вкус</h2>
+            <p class="section-desc">Каждый вкус создан с учётом предпочтений ваших гостей</p>
+    <div class="flavors-grid">
+        <div class="flavor-card">
+            <div class="flavor-image-wrapper">
+                <div class="flavor-glow"></div>
+                <img src="img/bottle_3.png" alt="LULU Cold Brew Cherry" class="flavor-image" loading="lazy">
+            </div>
+            <div class="flavor-info">
+                <h3 class="flavor-name">Вишня</h3>
+                <p class="flavor-desc">Насыщенный вкус спелой вишни с яркой кофейной основой. Натуральный состав без сахара</p>
+                <span class="flavor-tag">Хит продаж</span>
+            </div>
+        </div>
+        <div class="flavor-card">
+            <div class="flavor-image-wrapper">
+                <div class="flavor-glow"></div>
+                <img src="img/bottle_2.png" alt="LULU Cold Brew Raspberry" class="flavor-image" loading="lazy">
+            </div>
+            <div class="flavor-info">
+                <h3 class="flavor-name">Малина</h3>
+                <p class="flavor-desc">Яркий малиновый вкус с приятной кислинкой. Отличный выбор для летних месяцев</p>
+                <span class="flavor-tag">Рекомендуем</span>
+            </div>
+        </div>
+        <div class="flavor-card">
+            <div class="flavor-image-wrapper">
+                <div class="flavor-glow"></div>
+                <img src="img/bottle_1.png" alt="LULU Cold Brew Currant" class="flavor-image" loading="lazy">
+            </div>
+            <div class="flavor-info">
+                <h3 class="flavor-name">Смородина</h3>
+                <p class="flavor-desc">Созревшая смородина в идеальной паре с холодным кофе. Богатый вкус и аромат</p>
+                <span class="flavor-tag">Новинка</span>
+            </div>
+        </div>
+        <div class="flavor-card">
+            <div class="flavor-image-wrapper">
+                <div class="flavor-glow"></div>
+                <img src="img/bottle_5.png" alt="LULU Cold Brew Pomegranate" class="flavor-image" loading="lazy">
+            </div>
+            <div class="flavor-info">
+                <h3 class="flavor-name">Гранат</h3>
+                <p class="flavor-desc">Экзотическая гранатовая нотка. Глубокий вкус с кофейными оттенками</p>
+                <span class="flavor-tag">Премиум</span>
+            </div>
+        </div>
+        <div class="flavor-card">
+            <div class="flavor-image-wrapper">
+                <div class="flavor-glow"></div>
+                <img src="img/bottle_4.png" alt="LULU Cold Brew Quince" class="flavor-image" loading="lazy">
+            </div>
+            <div class="flavor-info">
+                <h3 class="flavor-name">Айва</h3>
+                <p class="flavor-desc">Тёплый аромат айвы с мягким кофейным послевкусием. Уникальный и запоминающийся вкус</p>
+                <span class="flavor-tag">Эксклюзив</span>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits" id="benefits">
+        <div class="container">
+            <div class="section-label">Преимущества</div>
+            <h2 class="section-title">Почему выбирают LULU</h2>
+            <p class="section-desc">Всё, что нужно для успешного старта и долгосрочного сотрудничества</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3 class="benefit-title">Сильный, современный бренд</h3>
+                    <p class="benefit-desc">T9 — это стильный продукт, который хорошо продаётся. Дизайн упаковки и вкусы работают на полку и увеличивают конверсию покупок.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    </div>
+                    <h3 class="benefit-title">Брендирование бутылок</h3>
+                    <p class="benefit-desc">Нанесём ваш логотип на каждую бутылку. Минимальный тираж — от 1000 шт.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    </div>
+                    <h3 class="benefit-title">Доставка по всей России - cтабильные поставки</h3>
+                    <p class="benefit-desc">Работаем со всеми регионами - cкладские остатки поддерживаются постоянно. Вы не столкнётесь с задержками или дефицитом.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    </div>
+                    <h3 class="benefit-title">Натуральный продукт</h3>
+                    <p class="benefit-desc">Напитки без сахара, консервантов
+и искусственных ароматизаторов. Каждая партия проходит контроль качества по внутренним стандартам T9.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="benefit-title">Маркетинговая поддержка</h3>
+                    <p class="benefit-desc">Баннеры, стойки, карточки вкусов, обучение персонала по продукту.
+Помогаем увеличить продажи прямо «в точке».</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <h3 class="benefit-title">Гибкие условия</h3>
+                    <p class="benefit-desc">От небольших кофеен до сетей – подстраиваемся под нужный формат бизнеса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Wholesale Section (закомментировано)
+<section class="section wholesale" id="wholesale">
+    <div class="container">
+        <div class="section-label">Оптовые поставки</div>
+        <h2 class="section-title">Оптовые поставки T9drinks</h2>
+        <p class="section-desc">Работаем с разными форматами бизнеса и подстраиваемся под ваш объём</p>
+        
+        <!-- Business Types: Photo + List -->
+      <!--  <div class="wholesale-business">
+            <div class="wholesale-business-photos">
+                <div class="wholesale-business-photo">
+                    <img src="img/baner2.jpeg" alt="Категории бизнеса для оптовых поставок" loading="lazy">
+                </div>
+            
+            </div>
+            <div class="wholesale-business-list">
+                <h3>С кем мы работаем</h3>
+                <ul>
+                    <li>Кофейни и кофейные сети</li>
+                    <li>Бары, лаунжи, караоке</li>
+                    <li>Магазины и супермаркеты</li>
+                    <li>Мини-маркеты и магазины у дома</li>
+                    <li>Фитнес-клубы и спорт-школы</li>
+                    <li>HoReCa и корпоративные клиенты</li>
+                    <li>Онлайн-магазины и маркетплейсы</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Product Info Block -->
+    <!--    <div class="product-info-block">
+            <div class="product-info-content">
+                <h3>Состав и характеристики</h3>
+                <p class="product-composition">
+                    <strong>Состав:</strong> экстракт кофе, подготовленная вода, концентрированный натуральный сок, сорбат калия, бензоат натрия.
+                </p>
+                <p class="product-description">
+                    Напиток безалкогольный кофейный тонизирующий COLD BREW с содержанием кофеина не более 0,2–0,4 мг/см³ — в наличии 5 вкусов: <span class="orange-text">Малина, Смородина, Гранат, Айва, Вишня</span>.
+                </p>
+                <div class="product-specs">
+                    <div class="product-spec">
+                        <span class="spec-label">Срок годности</span>
+                        <span class="spec-value">90 дней</span>
+                    </div>
+                    <div class="product-spec">
+                        <span class="spec-label">В упаковке</span>
+                        <span class="spec-value">15 штук</span>
+                    </div>
+                    <div class="product-spec">
+                        <span class="spec-label">Вкусов</span>
+                        <span class="spec-value">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+    <!--    <div class="how-it-works">
+            <h3 class="subsection-title">Как проходит работа</h3>
+            <div class="work-steps">
+                <div class="work-step">
+                    <div class="work-step-number">01</div>
+                    <h4>Заявка и консультация</h4>
+                    <p>Оставьте заявку, обсудим ваши потребности и подберём оптимальные условия</p>
+                </div>
+                <div class="work-step">
+                    <div class="work-step-number">02</div>
+                    <h4>Производство</h4>
+                    <p>Производим продукцию с контролем качества на всех этапах</p>
+                </div>
+                <div class="work-step">
+                    <div class="work-step-number">03</div>
+                    <h4>Логистика и доставка</h4>
+                    <p>Доставляем по Москве, МО и всей России в согласованные сроки</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Block -->
+    <!--    <div class="pricing-block">
+            <h3 class="subsection-title">Заказ и ценообразование</h3>
+            <p class="pricing-note">*в упаковке 15 штук</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-quantity">От 150 уп.</div>
+                    <div class="pricing-price">145 р/шт</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-quantity">От 30 уп.</div>
+                    <div class="pricing-price">160 р/шт</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-quantity">От 15 уп.</div>
+                    <div class="pricing-price">175 р/шт</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-quantity">От 6 уп.</div>
+                    <div class="pricing-price">190 р/шт</div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-quantity">От 1 уп.</div>
+                    <div class="pricing-price">200 р/шт</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delivery Conditions -->
+    <!--    <div class="delivery-conditions">
+            <h3 class="subsection-title">Условия доставки</h3>
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <div class="delivery-badge">01</div>
+                    <h4>Москва и МО</h4>
+                    <p class="delivery-time">Доставка 1–2 дня</p>
+                    <ul class="delivery-list">
+                        <li>Крупные партии по согласованному графику</li>
+                        <li>Есть самовывоз с производства</li>
+                        <li>Помимо доставки доступен самовывоз</li>
+                    </ul>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-badge">02</div>
+                    <h4>Регионы России</h4>
+                    <p class="delivery-time">Отправка ТК по вашему выбору</p>
+                    <ul class="delivery-list">
+                        <li>СДЭК, ПЭК, Деловые Линии и др.</li>
+                        <li>Сроки: от 2 до 7 дней в зависимости от региона</li>
+                        <li>Помощь в подборе оптимальной логистики</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="delivery-note">Мы доставляем продукцию по всей России</p>
+        </div>
+
+        <!-- Minimum Order -->
+    <!--    <div class="minimum-order">
+            <div class="minimum-order-content">
+                <div class="minimum-order-number">03</div>
+                <div class="minimum-order-text">
+                    <h3>Минимальная партия</h3>
+                    <p>от 1 коробки (15 шт в упаковке)</p>
+                    <p class="minimum-order-desc">Чтобы сотрудничество было удобным для любого формата бизнеса, мы сделали гибкие условия</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Individual Conditions -->
+    <!--    <div class="individual-conditions">
+            <p>Индивидуальные условия для сетей, крупных объемов и регулярных поставок</p>
+        </div>
+        </div>
+</section> -->
+
+    <!-- Branding Section -->
+    <section class="section branding" id="branding">
+        <div class="container">
+            <div class="section-label">Брендирование</div>
+            <h2 class="section-title">Ваш логотип на каждой бутылке</h2>
+            <div class="branding-grid">
+                <div class="branding-content">
+                    <p class="branding-text">
+                        Предлагаем услугу брендирования бутылок под логотип вашего заведения. Это повышает узнаваемость бренда, создаёт премиальный имидж и выделяет вас среди конкурентов.
+                    </p>
+                    <ul class="branding-list">
+                        <li><span class="branding-check">✓</span> Нанесение логотипа любой сложности</li>
+                        <li><span class="branding-check">✓</span> Минимальный тираж — от 1 000 бутылок</li>
+                        <li><span class="branding-check">✓</span> Стойкие к истиранию материалы</li>
+                        <li><span class="branding-check">✓</span> Дизайн-макет бесплатно</li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-orange">Узнать условия брендирования</a>
+                </div>
+                <div class="branding-visual">
+                    <div class="branding-showcase">
+                        <div class="branding-bottle branding-bottle-1">
+                            <img src="img/logo_1.jpeg" alt="Брендированная бутылка LULU вариант 1" loading="lazy">
+                        </div>
+                        <div class="branding-bottle branding-bottle-2">
+                            <img src="img/logo_2.jpeg" alt="Брендированная бутылка LULU вариант 2" loading="lazy">
+                        </div>
+                        <div class="branding-bottle branding-bottle-3">
+                            <img src="img/logo_3.jpeg" alt="Брендированная бутылка LULU вариант 3" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geography Section -->
+    <section class="section geography" id="geography">
+        <div class="container">
+            <div class="section-label">География</div>
+            <h2 class="section-title">Мы работаем по всей России</h2>
+            <p class="section-desc">Наши партнёры в более чем 50 городах от Калининграда до Владивостока</p>
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <svg class="russia-map" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+                        <path class="map-outline" d="M50,250 Q100,200 200,220 T400,200 T600,230 T800,220 Q850,240 850,280 Q800,320 700,310 T500,320 T300,300 T100,290 Q50,280 50,250 Z"/>
+                        <circle class="map-dot" cx="150" cy="260" r="6"/>
+                        <circle class="map-dot" cx="250" cy="240" r="6"/>
+                        <circle class="map-dot" cx="400" cy="250" r="6"/>
+                        <circle class="map-dot" cx="550" cy="260" r="6"/>
+                        <circle class="map-dot" cx="700" cy="250" r="6"/>
+                        <circle class="map-dot" cx="800" cy="260" r="6"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="geo-stats">
+                <div class="geo-stat">
+                    <span class="geo-stat-number">50+</span>
+                    <span class="geo-stat-label">Городов присутствия</span>
+                </div>
+                <div class="geo-stat">
+                    <span class="geo-stat-number">300+</span>
+                    <span class="geo-stat-label">Точек продаж</span>
+                </div>
+                <div class="geo-stat">
+                    <span class="geo-stat-number">100%</span>
+                    <span class="geo-stat-label">Покрытие РФ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-label">Отзывы</div>
+            <h2 class="section-title">Нам доверяют партнёры</h2>
+            <div class="reviews-slider">
+                <div class="reviews-track">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Отличный продукт! Наши гости в восторге от Cold Brew. Особенно радует, что напиток без сахара — это то, что сейчас нужно. Планируем увеличивать объёмы заказов."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">А</div>
+                            <div class="review-info">
+                                <span class="review-name">Алексей</span>
+                                <span class="review-org">Кофейня "Bean", Москва</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Сотрудничаем с LULU уже полгода. Очень довольны качеством и сервисом. Брендированные бутылки с нашим логотипом — отличный маркетинговый ход."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">Е</div>
+                            <div class="review-info">
+                                <span class="review-name">Елена</span>
+                                <span class="review-org">Сеть кофеен "Coffee Lab", СПб</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Продукт превзошёл ожидания. Высокая маржинальность, быстрая доставка, отличная поддержка. Рекомендуем всем коллегам по рынку."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">Д</div>
+                            <div class="review-info">
+                                <span class="review-name">Дмитрий</span>
+                                <span class="review-org">Restaurant Group, Казань</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Брендирование бутылок под наш логотип — это просто бомба! Гости часто фотографируют и отмечают нас в соцсетях. Отличная реклама."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">М</div>
+                            <div class="review-info">
+                                <span class="review-name">Мария</span>
+                                <span class="review-org">Фитнес-клуб "FitLife", Екатеринбург</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-controls">
+                    <button class="review-btn" id="reviewPrev" aria-label="Предыдущий отзыв">←</button>
+                    <div class="review-dots" id="reviewDots">
+                        <span class="review-dot active"></span>
+                        <span class="review-dot"></span>
+                        <span class="review-dot"></span>
+                        <span class="review-dot"></span>
+                    </div>
+                    <button class="review-btn" id="reviewNext" aria-label="Следующий отзыв">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="section docs" id="docs">
+        <div class="container">
+            <div class="section-label">Документы</div>
+            <h2 class="section-title">Документы и сертификаты</h2>
+            <p class="section-desc">Вся необходимая документация для начала сотрудничества</p>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h4>Декларация соответствия</h4>
+                    <p>PDF, 2.4 MB</p>
+                    <a href="#" class="doc-link">Открыть →</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h4>Сертификат качества</h4>
+                    <p>PDF, 1.8 MB</p>
+                    <a href="#" class="doc-link">Открыть →</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h4>Разрешительная документация</h4>
+                    <p>PDF, 3.1 MB</p>
+                    <a href="#" class="doc-link">Открыть →</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    </div>
+                    <h4>Протокол испытаний</h4>
+                    <p>PDF, 1.5 MB</p>
+                    <a href="#" class="doc-link">Открыть →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="section steps" id="steps">
+        <div class="container">
+            <div class="section-label">Этапы работы</div>
+            <h2 class="section-title">Как начать сотрудничество</h2>
+            <div class="steps-timeline">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Заявка</h3>
+                        <p>Оставьте заявку на сайте — это займёт не больше минуты</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Консультация</h3>
+                        <p>Мы свяжемся с вами в течение 2 часов, ответим на все вопросы</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Согласование условий</h3>
+                        <p>Обсуждаем объёмы, цены, условия брендирования и доставки</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Отгрузка продукции</h3>
+                        <p>Производим и отправляем заказ в любой регион России</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Начало продаж</h3>
+                        <p>Получаете прибыль с первой партии. Мы на связи для поддержки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Какой минимальный объём заказа?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Минимальный объём заказа — 1 паллета (60 коробок по 12 бутылок). Для брендирования — от 1 000 бутылок.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Какие сроки доставки?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Срок доставки зависит от региона и составляет от 3 до 14 дней. Отгрузка производится в течение 5 рабочих дней после оплаты.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Как работает брендирование бутылок?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Вы предоставляете логотип, мы разрабатываем макет и наносим его на бутылки методом шелкографии. Минимальный тираж — 1 000 штук.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Работаете ли вы по регионам?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы доставляем продукцию во все регионы России. При крупных объёмах возможно эксклюзивное сотрудничество по региону.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Какие документы вы предоставляете?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Мы предоставляем полный пакет документов: декларацию соответствия, сертификат качества, договор поставки и счёт-фактуру.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section cta-final" id="cta-final">
+        <div class="container">
+            <div class="cta-final-wrapper">
+                <div class="cta-final-glow"></div>
+                <h2 class="cta-final-title">Готовы начать зарабатывать<br>с <span class="orange-text">LULU</span>?</h2>
+                <p class="cta-final-desc">Оставьте заявку прямо сейчас и получите персональное коммерческое предложение с выгодными условиями</p>
+                <a href="#contacts" class="btn btn-orange btn-lg">Оставить заявку</a>
+                <div class="cta-final-links">
+                    <a href="https://t.me/lulucoffeebot" class="cta-social" target="_blank" rel="noopener">Telegram</a>
+                    <a href="#" class="cta-social">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="section-label">Контакты</div>
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="section-desc">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+            <div class="contacts-grid">
+                <div class="contacts-info">
+                    <p class="contacts-desc">Мы всегда на связи и готовы ответить на все ваши вопросы о сотрудничестве, условиях поставки и брендировании.</p>
+                    <div class="contacts-social">
+                        <a href="https://t.me/lulucoffeebot" class="social-btn" target="_blank" rel="noopener" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" placeholder="Имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="company" placeholder="Компания">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="city" placeholder="Город">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" name="phone" placeholder="Телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" name="comment" placeholder="Комментарий"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange form-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-main">LULU</span>
+                        <span class="logo-sub">COLD BREW</span>
+                    </a>
+                    <p class="footer-text">Премиальный холодный кофе для вашего бизнеса</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Разделы</h4>
+                    <a href="#about">О продукте</a>
+                    <a href="#flavors">Вкусы</a>
+                    <a href="#benefits">Преимущества</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <a href="https://t.me/lulucoffeebot" class="footer-contact" target="_blank" rel="noopener">Telegram</a>
+                    <a href="#" class="footer-contact">WhatsApp</a>
+                    <p class="footer-contact">Россия</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 LULU Cold Brew. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
